@@ -1,0 +1,25 @@
+const { Pool } = require('pg');
+require('dotenv').config();
+
+// Database Connection Setup
+const pool = new Pool({
+    user: process.env.PGUSER,
+    host: process.env.PGHOST,
+    database: process.env.PGDATABASE, // Should be 'aura_nexus'
+    password: process.env.PGPASSWORD,
+    port: process.env.PGPORT || 5432,
+});
+
+// Test Database Connection
+pool.connect()
+    .then(client => {
+        console.log('Database connection successful!');
+        client.release(); 
+    })
+    .catch(err => {
+        console.error('CRITICAL: Error connecting to database:', err.stack);
+        // We keep the server running as the database might recover, but log the error.
+    });
+
+// Export the pool instance so controllers can use it directly
+module.exports = pool;

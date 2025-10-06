@@ -1,0 +1,74 @@
+// controllers/locations.js
+const pool = require('../db/pool'); 
+
+// Helper function to handle database queries and errors
+const executeQuery = async (res, queryText, params = []) => {
+    try {
+        const result = await pool.query(queryText, params); 
+        return result.rows;
+    } catch (error) {
+        // --- ADDED DEBUGGING LINE ---
+        console.error('SQL EXECUTION ERROR:', error.message);
+        // -----------------------------
+        res.status(500).json({ error: 'Failed to retrieve data from the database.' });
+        return null;
+    }
+};
+
+/**
+ * GET /api/locations
+ * Fetches all locations (ID, Name, Sector Code, Description, Image URL)
+ */
+exports.getAllLocations = async (req, res) => {
+    const queryText = `
+        SELECT id, name, sector_code, description, image_url
+        FROM locations
+        ORDER BY id;
+    `;
+    
+    const locations = await executeQuery(res, queryText);
+
+    if (locations) {
+        // Return the simple list of locations for the Home component
+        res.json(locations);
+    }
+};
+
+/**
+ * GET /api/locations/:id
+ * Fetches details for a specific location AND all events associated with it.
+ */
+exports.getLocationDetailsAndEvents = async (req, res) => {
+    const locationId = req.params.id;
+
+    // 1. Query to get the specific location details
+    const locationQuery = `
+        SELECT id, name, sector_code, description, image_url
+        FROM locations
+        WHERE id = $1;
+    `;
+    const locationResult = await executeQuery(res, locationQuery, [locationId]);
+
+    if (!locationResult || locationResult.length === 0) {
+        return res.status(404).json({ error: 'Location not found.' });
+    }
+
+    const location = locationResult[0];
+
+    // 2. Query to get all events for that specific location
+    const eventsQuery = `
+        SELECT id, location_id, title, start_date, organizer, details, event_type
+        FROM events
+        WHERE location_id = $1
+        ORDER BY start_date;
+    `;
+    const eventsResult = await executeQuery(res, eventsQuery, [locationId]);
+
+    // Construct the final response object required by the React frontend (LocationDetail.jsx)
+    const responseData = {
+        location: location,
+        events: eventsResult || [], // Return empty array if no events found
+    };
+
+    res.json(responseData);
+};

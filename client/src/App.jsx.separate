@@ -1,0 +1,61 @@
+import React, { useState } from 'react';
+import Home from './Home'; // Removed .jsx extension
+import LocationDetail from './LocationDetail'; // Removed .jsx extension
+import "./styles.css";
+
+// Main App component manages the current view (Home or Detail)
+const App = () => {
+  // State to manage which page is displayed: 'home' or a location ID (e.g., '1')
+  const [page, setPage] = useState('home');
+
+  // Function passed down to components to handle navigation back to home or to a detail page
+  const navigate = (newPath, id = null) => {
+    if (newPath === 'home') {
+      setPage('home');
+    } else if (newPath === 'detail' && id) {
+      // Set the page state to the location ID to trigger the detail view
+      setPage(id.toString());
+    }
+  };
+
+  // Render the appropriate component based on the 'page' state
+  const renderPage = () => {
+    if (page === 'home') {
+      return <Home navigate={navigate} />;
+    }
+    // If 'page' is a string ID, render the detail view
+    return <LocationDetail locationId={page} navigate={navigate} />;
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-900 text-white font-sans antialiased">
+      <header className="bg-indigo-800 shadow-xl p-4 sticky top-0 z-10">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 
+            className="text-3xl font-extrabold tracking-tight cursor-pointer hover:text-indigo-200 transition"
+            onClick={() => navigate('home')}
+          >
+            Aura Nexus Event Explorer
+          </h1>
+          {page !== 'home' && (
+            <button
+              onClick={() => navigate('home')}
+              className="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow-md hover:bg-indigo-500 transition duration-150"
+            >
+              ← Back to Sectors
+            </button>
+          )}
+        </div>
+      </header>
+      <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        {renderPage()}
+      </main>
+    </div>
+  );
+};
+
+export default App;
+
+// NOTE: Since Vite requires a default export for the main App file, we keep Home/LocationDetail in separate files 
+// and import them here.
+

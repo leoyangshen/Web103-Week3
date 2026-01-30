@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BEB9782A-3EC4-5622-3A54-187C7DF44E8B" name="locations">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The clickable areas on the frontend]]></commentInRDBMS>
+<generatorID>6952F966-319B-50B0-5478-FAD01B288F41</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="3B7A402B-BE82-53BD-9E83-C7718FCC9A69">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<generatorID>AFC1B5EC-0D71-DEC7-1B6B-F588B5CC4302</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9D446430-980A-5CDF-22C1-9327C96DA917</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="E3F05FA3-F152-276F-3A36-C1D29B2AE051">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<generatorID>B2B5AC6F-810D-CB28-B3B7-45A08115FE03</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DD56F40F-8581-6C67-D864-D46C9637D809</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sector code" id="62792AB4-B0B3-6D52-06D6-242A544357CE">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Used for URL paths/API requests (e.g., HYDRO, ADMIN)]]></commentInRDBMS>
+<generatorID>3FF8ECA5-6C96-565E-CCBF-05A1F6F64E40</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>47A535BE-9722-6BC4-0CE4-407EAB325919</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="B6AEB6EE-2F68-A881-2137-02C6F0E83489">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<generatorID>E2004BFD-BE00-F174-38EA-56E0726C470B</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>B0171B78-5AD7-803B-F5AD-7F417FAB3A9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="image url" id="942FADA6-ACC6-B2A2-DC03-D98DDA878C4E">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<generatorID>E9227643-E534-8B2D-F127-A50A9061AAEE</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7D997588-000B-E7B1-AEC5-61A642CA388B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A2ED7D75-F45A-13A1-7AE5-D0AB7F1146B3" name="locations PK">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<generatorID>EA03B89E-95E5-6FC8-1AD7-AAC4822578A1</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3B7A402B-BE82-53BD-9E83-C7718FCC9A69</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0CEBB0D5-41AE-B703-04B3-C2CE0D7DC330" name="locations sector unique">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<generatorID>0D243F5D-E151-89DD-7C59-34EED0634A42</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>62792AB4-B0B3-6D52-06D6-242A544357CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

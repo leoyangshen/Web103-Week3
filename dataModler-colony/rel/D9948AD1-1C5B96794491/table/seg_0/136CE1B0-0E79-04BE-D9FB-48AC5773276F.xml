@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="136CE1B0-0E79-04BE-D9FB-48AC5773276F" name="events">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[The data displayed on the detail pages]]></commentInRDBMS>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>B5F7F0AC-CD29-DAF4-88C2-CB0B04F6AEDF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="609511D7-A69C-2CC4-449B-D30C894E410D">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>C56966EE-7E85-39C1-C2DE-8F17DFE38E6E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9D446430-980A-5CDF-22C1-9327C96DA917</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="location_id" id="5D90CA94-3B42-7DFA-C2EA-EC59C8BACC23">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>C53D10E9-B014-B492-6426-1D7313B9989C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9D446430-980A-5CDF-22C1-9327C96DA917</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDBB9931-C05C-4E7D-7FD6-4D7AC3B2DEA1" referredColumn="AFC1B5EC-0D71-DEC7-1B6B-F588B5CC4302"/>
+</associations>
+</Column>
+<Column name="title" id="2929BAEE-B5C5-F8BD-FDE1-9E1C5B4A9B77">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>ECDA1CF6-F9E0-5008-142A-05748D964B17</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DD56F40F-8581-6C67-D864-D46C9637D809</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="E0F297EC-989F-1A32-FBAF-9FCBFA4BE984">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>E9A32BF6-177F-B2FF-B497-8F8FC9F6690C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF5BB16D-3C8A-FB3C-CD3C-E1CE5012D548</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="organizer" id="7F1BA6B1-F2F5-43E7-22B0-D81ED8618820">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>5AC6FBBD-A5F5-9B48-3B22-033558AE7546</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DD56F40F-8581-6C67-D864-D46C9637D809</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="details" id="7544B7C6-58B7-19A5-07D9-2881226DE2CA">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>57D263DA-29E9-3FD0-899B-CF77025B1E6F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>B0171B78-5AD7-803B-F5AD-7F417FAB3A9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="event_type" id="6BB7BCAE-87B6-1C29-1378-9B986BD63F44">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>01950056-A41C-427D-A713-293E746B2298</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>47A535BE-9722-6BC4-0CE4-407EAB325919</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED5927F5-4CF7-E21B-B8AB-0FE5350CA9F9" name="events_PK">
+<sourceDDLFile>oracle-schema.sql</sourceDDLFile>
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<importedID>361EA314-6C58-4E22-6ACE-CC45C751249A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="609511D7-A69C-2CC4-449B-D30C894E410D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF645B51-CB22-7661-D1AE-9D3C2CDF926F" name="fk_events_location">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D90CA94-3B42-7DFA-C2EA-EC59C8BACC23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

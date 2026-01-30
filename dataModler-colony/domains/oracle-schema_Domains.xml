@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="oracle-schema_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="47A535BE-9722-6BC4-0CE4-407EAB325919">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>oracle-schema_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_1000" id="7D997588-000B-E7B1-AEC5-61A642CA388B">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1000</dataTypeSize>
+<fileName>oracle-schema_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="9D446430-980A-5CDF-22C1-9327C96DA917">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>oracle-schema_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CLOB_0_0_0" id="B0171B78-5AD7-803B-F5AD-7F417FAB3A9D">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>oracle-schema_Domains</fileName>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_255" id="DD56F40F-8581-6C67-D864-D46C9637D809">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>255</dataTypeSize>
+<fileName>oracle-schema_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Timestamp_6_0_0" id="FF5BB16D-3C8A-FB3C-CD3C-E1CE5012D548">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:21:22 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<fileName>oracle-schema_Domains</fileName>
+<logicalDatatype>LOGDT015</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

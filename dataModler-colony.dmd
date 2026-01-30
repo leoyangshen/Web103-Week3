@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="dataModler-colony" id="C42F5EB8-7941-CB4D-9312-4535EE872FDF" version="3.5">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:19:34 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C42F5EB8-7941-CB4D-9312-4535EE872FDF</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="746D3144-6341-BE36-418B-C89B4F5EE236">
+<designStoragePath>/oracle-schema</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

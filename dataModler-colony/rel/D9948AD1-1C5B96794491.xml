@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="D9948AD1-F8C8-9621-C890-1C5B96794491" mainViewID="72360923-BF09-3C45-EA13-4BA3014FF6B5">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:19:34 UTC</createdTime>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>oracle-schema.sql</fileName>
+<pathName>/home/leo/Classes/fall_2025/CodePath-Web103/Week3</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

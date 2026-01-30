@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_events_location" directorySegmentName="seg_0" id="09788BBC-66AB-36E6-655D-51AC6AC9C346">
+<createdBy>leo</createdBy>
+<createdTime>2026-01-30 16:22:01 UTC</createdTime>
+<generatorID>FDBB9931-C05C-4E7D-7FD6-4D7AC3B2DEA1</generatorID>
+<ownerDesignName>dataModler-colony</ownerDesignName>
+<engineerTo>
+<item key="D9948AD1-F8C8-9621-C890-1C5B96794491" value="true"/>
+</engineerTo>
+<sourcePk>A2ED7D75-F45A-13A1-7AE5-D0AB7F1146B3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BEB9782A-3EC4-5622-3A54-187C7DF44E8B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0D7EDEEC-B431-0249-68CE-C71AAB6D09CD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

@@ -51,3 +51,7 @@ Local database files (if any)
 ###################################
 .DS_Store
 Thumbs.db
+**/*.localz
+**/*.local
+**/*.git
+**/*.DS_Store
